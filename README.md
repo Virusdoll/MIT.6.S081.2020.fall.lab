@@ -8,7 +8,7 @@
 
 ## Lab
 
-- [x] Lab: Xv6 and Unix utilities
-- [x] Lab: system calls
+- [x] [Lab: Xv6 and Unix utilities](https://github.com/Virusdoll/MIT.6.S081.2020.fall.lab/tree/util)
+- [x] [Lab: system calls](https://github.com/Virusdoll/MIT.6.S081.2020.fall.lab/tree/syscall)
 - [ ] Lab: page tables
 
