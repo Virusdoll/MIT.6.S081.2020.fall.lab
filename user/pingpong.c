@@ -15,7 +15,7 @@ main(int argc, char *argv[])
         pid = getpid();
         
         msg_number = read(p[0], buf, 4);
-        fprintf(1, "%d(child): received ping -- %s(%dchars)\n", pid, buf, msg_number);
+        fprintf(1, "%d: received ping\n", pid, buf, msg_number);
         
         write(p[1], "CtoP", 4);
         
@@ -29,7 +29,7 @@ main(int argc, char *argv[])
         
         wait(0);
         msg_number = read(p[0], buf, 4);
-        fprintf(1, "%d(parent): received pong -- %s(%dchars)\n", pid, buf, msg_number);
+        fprintf(1, "%d: received pong\n", pid, buf, msg_number);
 
         close(p[0]);
         close(p[1]);
